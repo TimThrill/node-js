@@ -4,7 +4,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.get('/index.htm', function(req, res) {
-    res.sendFile(__dirname + "/flight-map.html");
+    res.sendFile(__dirname + "/view/flight-map.html");
 });
 
 var server = app.listen(8080, function() {
